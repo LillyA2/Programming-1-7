@@ -4,7 +4,7 @@ num3 = int(input("number 3:"))
 num4 = int(input("number 4:"))
 
 Sum = num1 + num2 + num3 + num4
-average = sum/4
+average = Sum / 4
 
 print("the sum is", Sum)
 print("the average is", average)
