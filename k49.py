@@ -1,4 +1,5 @@
 from stanfordkarel import *
+from time import sleep
 
 
 class ktools:
@@ -39,12 +40,6 @@ class ktools:
     self.m()
     self.put()
 
-def put10(self):
-  """put 5 beepers in a line"""
-  self.put5()
-  self.m()
-  self.put5()
-
   def h(self):
     """Print H using beepers"""
     self.tl()
@@ -71,19 +66,19 @@ def put10(self):
     self.m()
     
   def fic(self):
-      """Front is clear"""
-      return front_is_clear()
+    """Front is clear"""
+    return front_is_clear()
 
-  def fib(self):
+  def fib(self) ->bool:
     """Front is Blocked"""
-    return not self.fic()
+    return not self.fib()
 
-  def ric(self):
+  def ric(self) -> bool:
     """Right is Clear"""
     self.tr()
-  if self.fic():
-    self.tl()
-    return True 
+    if self.fic():
+      self.tl()
+      return True 
     self.tl()
     return False
 
@@ -105,63 +100,19 @@ def put10(self):
           self.m()
     pass
       
-  def mm(self, num):
-      """Move Multiple"""
-      for number in range(0, num):
-        self.m()
+      
+    
+    def main():
+      """Karel code goes here!"""
+    kt = ktools()
+    kt.m()
+    kt.tl()
+    kt.m()
+    kt.mazemove()
+    sleep(3)
 
-  def putm(self, num):
-        """Put multiple"""
-        for i in range(num - 1):
-          self.put()
-          self.m()
-        self.put()
-  def pickm(self, num):
-      """Pick multiple"""
-      for _ in range(num - 1):
-        self.pick()
-        self.m()
-      self.pick()
-  def main():
-    """Karel code goes here!"""
-  kt = ktools()
-  kt.mm(5)
-  kt.tl
-  kt.m()
-  kt.pick()      
-  kt.tl()
-  kt.m()
-  kt.tr()
-  kt.m()
-  kt.pick()
-  kt.tr()
-  kt.m()
-  kt.pick()
-  kt.m()
-  kt.tl()
-  kt.m()
-  kt.pick()
-  kt.tl()
-  kt.m()
-  kt.pick()
-  kt.m()
-  kt.pick()
-  kt.m()
-  kt.pick()
-  kt.m()
-  kt.tr()
-  kt.m()
-  kt.pick()
-  kt.tr()
-  kt.m()
-  kt.pick()
-  kt.m()
-  kt.pick()
-  kt.m()
-  kt.pick()
-  kt.m()
-  kt.pick()
-  pass
+    kt.m()
+    pass
 
 
 if __name__ == "__main__":

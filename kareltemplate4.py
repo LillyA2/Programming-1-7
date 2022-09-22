@@ -105,63 +105,27 @@ def put10(self):
           self.m()
     pass
       
-  def mm(self, num):
+    def mm(self, num):
       """Move Multiple"""
       for number in range(0, num):
         self.m()
 
-  def putm(self, num):
+    def putm(self, num):
         """Put multiple"""
         for i in range(num - 1):
           self.put()
           self.m()
         self.put()
-  def pickm(self, num):
+    def pickm(self, num):
       """Pick multiple"""
       for _ in range(num - 1):
         self.pick()
         self.m()
       self.pick()
-  def main():
-    """Karel code goes here!"""
-  kt = ktools()
-  kt.mm(5)
-  kt.tl
-  kt.m()
-  kt.pick()      
-  kt.tl()
-  kt.m()
-  kt.tr()
-  kt.m()
-  kt.pick()
-  kt.tr()
-  kt.m()
-  kt.pick()
-  kt.m()
-  kt.tl()
-  kt.m()
-  kt.pick()
-  kt.tl()
-  kt.m()
-  kt.pick()
-  kt.m()
-  kt.pick()
-  kt.m()
-  kt.pick()
-  kt.m()
-  kt.tr()
-  kt.m()
-  kt.pick()
-  kt.tr()
-  kt.m()
-  kt.pick()
-  kt.m()
-  kt.pick()
-  kt.m()
-  kt.pick()
-  kt.m()
-  kt.pick()
-  pass
+    def main():
+      """Karel code goes here!"""
+    kt = ktools()
+    pass
 
 
 if __name__ == "__main__":
