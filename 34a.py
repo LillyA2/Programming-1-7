@@ -21,6 +21,10 @@ class ktools:
     self.tl()
     self.tl()
 
+  def pick(self):
+    """Pick beeper"""
+    pick_beeper()
+    
   def put(self):
     """Put Beeper"""
     put_beeper()
@@ -122,19 +126,24 @@ def put10(self):
         self.pick()
         self.m()
       self.pick()
-  def main():
-    """Karel code goes here!"""
+def main():
+  """Karel code goes here!"""
   kt = ktools()
-  kt.mm(5)
-  kt.tl
+  kt.m()
+  kt.m()
+  kt.m()
+  kt.m()
+  kt.m()
+  kt.tl()
   kt.m()
   kt.pick()      
   kt.tl()
   kt.m()
   kt.tr()
   kt.m()
-  kt.pick()
   kt.tr()
+  kt.pick()
+  kt.m()
   kt.m()
   kt.pick()
   kt.m()
@@ -143,9 +152,9 @@ def put10(self):
   kt.pick()
   kt.tl()
   kt.m()
-  kt.pick()
   kt.m()
   kt.pick()
+  kt.m()
   kt.m()
   kt.pick()
   kt.m()
@@ -154,13 +163,39 @@ def put10(self):
   kt.pick()
   kt.tr()
   kt.m()
-  kt.pick()
   kt.m()
   kt.pick()
   kt.m()
-  kt.pick()
   kt.m()
   kt.pick()
+  kt.m()
+  kt.m()
+  kt.pick()
+  kt.tl()
+  kt.m()
+  kt.tl()
+  kt.m()
+  kt.pick()
+  kt.m()
+  kt.m()
+  kt.pick()
+  kt.m()
+  kt.m()
+  kt.pick()
+  kt.tr()
+  kt.m()
+  kt.tr()
+  kt.m()
+  kt.pick()
+  kt.m()
+  kt.m()
+  kt.pick()
+  kt.tl()
+  kt.m()
+  kt.tl()
+  kt.m()
+  kt.pick()
+  
   pass
 
 
