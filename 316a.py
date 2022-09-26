@@ -20,7 +20,7 @@ class ktools:
     """Turn Around"""
     self.tl()
     self.tl()
-
+    
   def pick(self):
     """Pick Beeper"""
     pick_beeper()
@@ -72,6 +72,38 @@ class ktools:
 def main():
   """ Karel code goes here! """
   kt = ktools()
+  kt.m()
+  kt.m()
+  kt.tl()
+  kt.m()
+  kt.m()
+  kt.pick()
+  kt.m()
+  kt.pick()
+  kt.m()
+  kt.pick()
+  kt.m()
+  kt.pick()
+  kt.tr()
+  kt.m()
+  kt.pick()
+  kt.m()
+  kt.pick()
+  kt.m()
+  kt.pick()
+  kt.tr()
+  kt.m()
+  kt.pick()
+  kt.m()
+  kt.pick()
+  kt.m()
+  kt.pick()
+  kt.tr()
+  kt.m()
+  kt.pick()
+  kt.m()
+  kt.pick()
+  kt.m()
   pass
 
 
