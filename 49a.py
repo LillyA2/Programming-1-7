@@ -71,7 +71,8 @@ class ktools:
 
   def fib(self) ->bool:
     """Front is Blocked"""
-    return not self.fib()
+    return 
+    self.fib()
 
   def ric(self) -> bool:
     """Right is Clear"""
@@ -102,17 +103,46 @@ class ktools:
       
       
     
-    def main():
-      """Karel code goes here!"""
-    kt = ktools()
-    kt.m()
-    kt.tl()
-    kt.m()
-    kt.mazemove()
-    sleep(3)
-
-    kt.m()
-    pass
+def main():
+  """Karel code goes here!"""
+  kt = ktools()
+  kt.m()
+  kt.m()
+  kt.tl()
+  kt.m()
+  kt.mazemove()
+  sleep(3)
+  kt.m()
+  kt.m()
+  kt.m()
+  kt.mazemove()
+  kt.tl()
+  kt.m()
+  kt.tr()
+  kt.m()
+  kt.tr()
+  kt.m()
+  kt.m()
+  kt.m()
+  kt.m()
+  kt.tr()
+  kt.m()
+  kt.tl()
+  kt.m()
+  kt.tl()
+  kt.mazemove()
+  kt.ta()
+  kt.m()
+  kt.tl()
+  kt.m()
+  kt.m()
+  kt.m()
+  kt.m()
+  kt.m()
+  kt.m()
+  kt.ta()
+  kt.mazemove()
+  pass
 
 
 if __name__ == "__main__":

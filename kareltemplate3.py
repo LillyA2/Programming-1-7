@@ -39,11 +39,11 @@ class ktools:
     self.m()
     self.put()
 
-def put10(self):
-  """put 5 beepers in a line"""
-  self.put5()
-  self.m()
-  self.put5()
+  def put10(self):
+    """put 5 beepers in a line"""
+    self.put5()
+    self.m()
+    self.put5()
 
   def h(self):
     """Print H using beepers"""
@@ -71,8 +71,8 @@ def put10(self):
     self.m()
     
   def fic(self):
-      """Front is clear"""
-      return front_is_clear()
+    """Front is clear"""
+    return front_is_clear()
 
   def fib(self):
     """Front is Blocked"""
@@ -81,8 +81,8 @@ def put10(self):
   def ric(self):
     """Right is Clear"""
     self.tr()
-  if self.fic():
-    self.tl()
+    if self.fic():
+      self.tl()
     return True 
     self.tl()
     return False
@@ -107,9 +107,14 @@ def put10(self):
       
       
     
-    def main():
-      """Karel code goes here!"""
+  def main():
+    """Karel code goes here!"""
     kt = ktools()
+    kt.m()
+    kt.m()
+    kt.tl()
+    kt.m()
+    kt.mazemove()
     pass
 
 
