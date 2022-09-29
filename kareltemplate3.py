@@ -21,6 +21,10 @@ class ktools:
     self.tl()
     self.tl()
 
+  def pick(self):
+    """Pick Beeper"""
+    pick_beeper()
+
   def put(self):
     """Put Beeper"""
     put_beeper()
@@ -107,15 +111,11 @@ class ktools:
       
       
     
-  def main():
-    """Karel code goes here!"""
-    kt = ktools()
-    kt.m()
-    kt.m()
-    kt.tl()
-    kt.m()
-    kt.mazemove()
-    pass
+def main():
+  """Karel code goes here!"""
+  kt = ktools()
+    
+  pass
 
 
 if __name__ == "__main__":
