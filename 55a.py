@@ -2,12 +2,12 @@ from stanfordkarel import *
 
 
 class ktools:
-  def m(self):
+  def m(self): 
     """Shorthand for Move"""
     move()
 
   def tl(self):
-    """Turn Left"""
+    """Turn left"""
     turn_left()
 
   def tr(self):
@@ -38,10 +38,16 @@ class ktools:
   def put5(self):
     """Put 5 beepers in a line"""
     self.put2()
-    self.m()
+    self.m()        
     self.put2()
     self.m()
     self.put()
+
+  def put10(self):
+    """put 5 beepers in a line"""
+    self.put5()
+    self.m()
+    self.put5()
 
   def h(self):
     """Print H using beepers"""
@@ -67,21 +73,21 @@ class ktools:
     self.m()
     self.m()
     self.m()
-
-  def fic(self) -> bool:
-    """Front is Clear"""
+    
+  def fic(self):
+    """Front is clear"""
     return front_is_clear()
 
-  def fib(self) -> bool:
+  def fib(self):
     """Front is Blocked"""
     return not self.fic()
 
-  def ric(self) -> bool:
+  def ric(self):
     """Right is Clear"""
     self.tr()
     if self.fic():
       self.tl()
-      return True  # Immediately exit the function
+    return True 
     self.tl()
     return False
 
@@ -92,8 +98,8 @@ class ktools:
   def mazemove(self):
     """Maze Move"""
     if self.fib():
-      self.tl()
-    else:  # Otherwise...
+        self.tl()
+    else: #otherwise...
       self.m()
       if self.ric():
         self.tr()
@@ -102,68 +108,43 @@ class ktools:
           self.tr()
           self.m()
     pass
-
-  def mm(self, num):
-    """Move Multiple"""
-    for number in range(0, num):
-      self.m()
-
-  def putm(self, num):
-    """Put Multiple"""
-    for i in range(num - 1):
-      self.put()
-      self.m()
-    self.put()
-
-  def pickm(self, num):
-    """Pick Multiple"""
-    for _ in range(num - 1):
-      self.pick()
-      self.m()
-    self.pick()
-
-  def SOB(self) -> bool:
-    """Standing on Beeper"""
-    return beepers_present()
-
-  def jump(self):
-    """Jump for 510"""
-    while self.fic():
-      self.m()
-    self.tl()
-    while self.rib():
-      self.m()
-    self.tr()
-    self.m()
-    self.tr()
-    while self.fic():
-      self.m()
-    self.tl()
-
-  def find(self):
-    """Find for 515"""
-    while not facing_north():
-      self.tl()
-    self.m()
-    if not self.SOB():
-      self.tl()
-      self.m()
-      self.tl()
-      self.m()
-    for _ in range(2):
-      if not self.SOB():
-        self.m()
-        self.tl()
-        self.m()
-    pass
+      
+      
     
-
-
 def main():
-    """ Karel code goes here! """
-    kt = ktools()
-    
-    pass
+  """Karel code goes here!"""
+  kt = ktools()
+  kt.m()
+  kt.m()
+  kt.tl()
+  kt.m()
+  kt.pick()
+  kt.m()
+  kt.pick()
+  kt.m()
+  kt.pick()
+  kt.m()
+  kt.pick()
+  kt.tr()
+  kt.m()
+  kt.pick()
+  kt.m()
+  kt.pick()
+  kt.m()
+  kt.pick()
+  kt.tr()
+  kt.m()
+  kt.pick()
+  kt.m()
+  kt.pick()
+  kt.m()
+  kt.pick()
+  kt.tr()
+  kt.m()
+  kt.pick()
+  kt.m()
+  kt.pick()
+  pass
 
 
 if __name__ == "__main__":

@@ -157,13 +157,43 @@ class ktools:
         self.m()
     pass
     
-
+  def O(self):
+      """Print O with beepers."""
+      self.tl()
+      self.put5()
+      self.tr()
+      self.m()
+      self.put2()
+      self.tr()
+      self.m()
+      self.put2()
+      self.m()
+      self.put2()
+      self.tr()
+      self.m()
+      self.put()
+    
+  def One(self):
+      """Print the number 1 with beepers"""
+      self.tl()
+      self.put5()
+      self.ta()
+      self.m()
+      self.m()
+      self.m()
+      self.m()
+      self.m()
+      self.tl()
+      self.m()
+      self.m()
 
 def main():
-    """ Karel code goes here! """
-    kt = ktools()
-    
-    pass
+  """ Karel code goes here! """
+  kt = ktools()
+  kt.One()
+  for num in range(9):
+    kt.O()
+  pass
 
 
 if __name__ == "__main__":
